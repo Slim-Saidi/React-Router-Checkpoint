@@ -1,0 +1,79 @@
+body {
+  background-color: #363636 !important;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.search {
+  display: flax;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.lookingforamovie {
+  padding: 3px 20px;
+  border-radius: 5%;
+}
+
+.mBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.mBody input {
+  margin: 5px;
+  padding: 10px 10px;
+}
+
+.clear {
+  color: red;
+  font-weight: 700;
+  background-color: black;
+  border-style: solid;
+  border-radius: 3px white;
+}
+
+.clear:hover {
+  color: black;
+  background-color: red;
+}
+
+.movieCardDiv {
+  overflow: hidden;
+  color: #fff;
+  padding: 10px;
+}
+
+.movieCardDiv:hover {
+  box-shadow: 0 0 35px 15px red;
+}
+
+.MoviePic {
+  width: 220px;
+}
+
+.innerCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
