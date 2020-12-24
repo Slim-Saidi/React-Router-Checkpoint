@@ -7,6 +7,7 @@ const AddMovie = ({ addMovies }) => {
   const [date, setDate] = useState("");
   const [genre, setGenre] = useState("");
   const [poster, setPoster] = useState("");
+  const [trailer, setTrailer] = useState("");
   const [rate, setRate] = useState("");
   const [id, setId] = useState(uuid);
   const [description, setDescription] = useState("");
@@ -16,11 +17,12 @@ const AddMovie = ({ addMovies }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addMovies(title, date, genre, poster, rate, id, description);
+    addMovies(title, date, genre, poster, trailer, rate, id, description);
     setTitle("");
     setDate("");
     setGenre("");
     setPoster("");
+    setTrailer("");
     setRate("");
     setShow(false);
     setId();
@@ -66,6 +68,12 @@ const AddMovie = ({ addMovies }) => {
             placeholder="Poster Link"
             value={poster}
             onChange={(e) => setPoster(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Trailer"
+            value={trailer}
+            onChange={(e) => setTrailer(e.target.value)}
           />
           <input
             type="number"
